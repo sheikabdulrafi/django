@@ -9,10 +9,14 @@
       }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "fullstack/wsgi.py"
-      }
-    ]
+    {
+      "src": "/static/(.*)",
+      "dest": "fullstack-django/fullstack/static/$1"  
+    },
+    {
+      "src": "/(.*)",
+      "dest": "fullstack-django/fullstack/server.py" 
+    }
+  ]
   }
   
