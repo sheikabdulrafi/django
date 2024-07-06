@@ -1,5 +1,8 @@
 #!/bin/bash
 
+python --version
+
+
 # Ensure Python and pip are available
 export PATH="/vercel/path0/.python/bin:$PATH"
 
