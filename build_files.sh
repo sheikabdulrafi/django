@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # Ensure Python and pip are available
-export PATH="/usr/local/bin:$PATH"
+PYTHON_BIN=$(which python3.11)
+PIP_BIN=$(which pip3.11)
 
 # Install dependencies
-pip install -r requirements.txt
+$PIP_BIN install -r requirements.txt
 
 # Collect static files
-python manage.py collectstatic --noinput
+$PYTHON_BIN manage.py collectstatic --noinput
