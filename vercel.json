@@ -4,7 +4,7 @@
         "src": "fullstack/wsgi.py",
         "use": "@vercel/python",
         "config": {
-          "maxLambdaSize": "15mb", "runtimes": "python3.11"
+          "maxLambdaSize": "15mb"
         }
       }
     ],
