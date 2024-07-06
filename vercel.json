@@ -11,11 +11,7 @@
     "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "fullstack-django/fullstack/static/$1"  
-    },
-    {
-      "src": "/(.*)",
-      "dest": "fullstack-django/fullstack/server.py" 
+      "dest": "static/$1"  
     }
   ]
   }
