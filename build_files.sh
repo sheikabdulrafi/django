@@ -1,7 +1,9 @@
 #!/bin/bash
-
+echo "started build"
 # Install dependencies
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 # Collect static files
-python3 manage.py collectstatic --noinput
+python manage.py collectstatic
+echo "done collecting static files"
+echo 'build complete'
