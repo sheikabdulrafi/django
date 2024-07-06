@@ -1,0 +1,814 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #0081a7;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.openUp {
+  position: absolute;
+  top: 16%;
+  right: 2%;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.openUp:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px 80px;
+  overflow: hidden;
+}
+
+nav .menu {
+  position: absolute;
+  top: 45%;
+  right: calc(var(--right) * 1%);
+  transform: translateY(-50%);
+  z-index: 10000;
+  visibility: hidden;
+}
+
+nav h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding-top: 25px;
+}
+
+nav h1 span {
+  color: #00afb9;
+  text-transform: uppercase;
+}
+
+nav main {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav main a {
+  text-decoration: none;
+  color: #00afb9;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  overflow: hidden;
+}
+
+.HeroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeroSection .imgContainer {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeroSection .imgContainer img {
+  width: 100%;
+}
+
+.HeroSection .HeroContent {
+  width: 50%;
+}
+
+.HeroSection .HeroContent h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.HeroSection .HeroContent h1 span {
+  color: #00afb9;
+  text-transform: uppercase;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.HeroSection .HeroContent p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.ServiceSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ServiceSection h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #0081a7;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.ServiceSection main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ServiceSection main .serviceCard {
+  width: 200px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(194, 194, 194, 0.25),
+    inset 2px 2px 5px rgba(230, 230, 230, 0.25);
+  background-color: #0081a7;
+  margin: 10px;
+}
+
+.ServiceSection main .serviceCard .img {
+  width: 58%;
+  height: 50%;
+  border-radius: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ServiceSection main .serviceCard .img .icon {
+  font-size: 3rem;
+  color: #00afb9;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.ServiceSection main .serviceCard .content {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ServiceSection main .serviceCard .content h3 {
+  text-transform: uppercase;
+  color: yellow;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.ServiceSection main .serviceCard .content p {
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+.AboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutSection h1 {
+  text-transform: uppercase;
+  color: #00afb9;
+  font-size: 3rem;
+}
+
+.AboutSection main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AboutSection main .content {
+  width: 50%;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.AboutSection main .content p {
+  font-size: 1.2rem;
+}
+
+.AboutSection main .imgContainer {
+  width: 50%;
+  text-align: right;
+}
+
+.AboutSection main .imgContainer img {
+  width: 80%;
+  border-radius: 25px;
+}
+
+.ContactSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ContactSection .imgContainer {
+  width: 50%;
+  text-align: left;
+}
+
+.ContactSection .imgContainer img {
+  width: 80%;
+  border-radius: 25px;
+}
+
+.ContactSection main {
+  width: 50%;
+}
+
+.ContactSection main form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: #0081a7;
+  padding: 10px 25px;
+}
+
+.ContactSection main form div {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.ContactSection main form div input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #00afb9;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.ContactSection main form div textarea {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #00afb9;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.ContactSection main form div input:focus {
+  border-bottom: 2px solid #00afb9;
+}
+
+.ContactSection main form div textarea:focus {
+  border-bottom: 2px solid #00afb9;
+}
+
+.ContactSection main form div label {
+  font-size: 1.2rem;
+  color: #fdfcdc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.ContactSection main form #submitContact {
+  width: 40%;
+  height: 40px;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: auto;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  border: 3px solid #0081a7;
+  background-color: white;
+  transition: 0.2s linear;
+}
+
+.ContactSection main form #submitContact:hover {
+  cursor: pointer;
+  background-color: #fdfcdc;
+  color: #0081a7;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .logo {
+  width: 30%;
+  height: 100%;
+}
+
+footer .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+footer .siteMap {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .siteMap ul {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .siteMap ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 0px;
+}
+
+footer .siteMap ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  transition: all 0.3s linear;
+}
+
+footer .siteMap ul li a:hover {
+  color: #00afb9;
+}
+
+footer .socialMedia {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .socialMedia ul {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .socialMedia ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 0px;
+}
+
+footer .socialMedia ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  transition: all 0.3s linear;
+}
+
+footer .socialMedia ul li a:hover {
+  color: #00afb9;
+}
+
+.detailedServices{
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailedServices main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailedServices main .container{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: antiquewhite;
+  padding: 0px 20px;
+  border-radius: 50px;
+  margin: 30px 0px;
+}
+
+.detailedServices main .container .left{
+  width: 55%;
+}
+
+.detailedServices main .container .left p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.detailedServices main .container .right{
+  width: 28%;
+}
+
+.detailedServices main .container .right ul li{
+  font-size: 1.5rem;
+  text-decoration: none;
+    list-style-type: square;
+}
+
+.blogSection{
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogSection .bgTitle{
+  color: #0081a7;
+}
+
+.blogSection h1{
+  color: aliceblue;
+}
+
+.blogSection main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogSection main .container{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #0081a7;
+  padding: 0px 20px;
+  border-radius: 50px;
+  margin: 30px 0px;
+}
+
+.blogSection main .container .left{
+  width: 55%;
+}
+
+.blogSection main .container .left p{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: white
+} 
+
+.blogSection main .container .right{
+  width: 28%;
+}
+
+.blogSection main .container .right img{
+  width: 100%;
+  border-radius: 25px;
+}
+
+.careers{
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.careers main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.careers main .job{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(240, 240, 240);
+  padding: 50px 30px;
+  border-radius: 20px;
+  margin: 30px 0px;
+}
+
+.careers main .job .left{
+  width: 70%;
+}
+
+.careers main .job .right{
+  width: 28%;
+}
+
+.careers main .job p{
+  font-size: 1.5rem;
+  width: 80%;
+}
+
+.careers main .job img{
+  width: 100%;
+  border-radius: 25px;
+}
+
+
+
+
+/* media queries */
+@media screen and (max-width: 950px) {
+  section {
+    padding: 0px 20px;
+  }
+
+  nav {
+    padding: 0px 20px;
+  }
+
+  nav h1 {
+    font-size: 1rem;
+    padding-top: 25px;
+  }
+
+  nav main {
+    position: absolute;
+    top: 0px;
+    right: calc(var(--right) * 1px);
+    display: block;
+    height: 100vh;
+    width: 50%;
+    background-color: #0081a7;
+    padding: 15px;
+    padding-top: 50px;
+  }
+
+  nav main a {
+    color: #fdfcdc;
+    display: block;
+    font-size: 2.5rem;
+    padding: 40px 0px;
+  }
+
+  nav .menu {
+    transition: all 0.25s linear;
+    visibility: visible;
+    color: gold;
+    font-size: 1.5rem;
+  }
+
+  nav .sideMenu {
+    transition: all 0.25s linear;
+  }
+
+  .HeroSection {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .HeroSection .imgContainer {
+    width: 100%;
+  }
+
+  .HeroSection .imgContainer img {
+    width: 120%;
+  }
+
+  .HeroSection .HeroContent {
+    width: 100%;
+  }
+
+  .HeroSection .HeroContent h1 {
+    font-size: 2.2rem;
+  }
+
+  .ServiceSection main {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .ServiceSection main .serviceCard {
+    width: 170px;
+    height: 340px;
+  }
+
+  .ServiceSection main .serviceCard .content p {
+    font-size: 0.8rem;
+  }
+
+  .ServiceSection main .serviceCard .img {
+    width: 120px;
+    height: 50%;
+  }
+
+  .AboutSection main {
+    flex-direction: column;
+  }
+
+  .AboutSection main .content {
+    width: 95%;
+  }
+
+  .AboutSection main .imgContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ContactSection .imgContainer {
+    display: none;
+  }
+
+  .ContactSection main {
+    width: 98%;
+  }
+
+  .ContactSection main h1 {
+    text-align: center;
+  }
+
+  footer > * {
+    margin: 0;
+    padding: 0;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  footer .logo {
+    display: none;
+  }
+
+  .detailedServices h1{
+    font-size: 1.75rem;
+  }
+
+  .detailedServices main .container{
+    height: auto;
+
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .detailedServices main h1{
+    font-size: 2rem;
+  }
+
+  .detailedServices main .container .left{
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .blogSection main .container:nth-child(odd){
+    flex-direction: column;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .blogSection main .container:nth-child(even){
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .blogSection main .container .left{
+    width: 100%;
+    padding: 10px 15px;
+  }
+  
+  .blogSection main .container .right{
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .blogSection main .container{
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .careers main .job{
+    flex-direction: column;
+  }
+
+  .careers main .job h1{
+    text-align: center;
+  }
+
+  .careers main .job .left{
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .careers main .job .right{
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .careers main .job p{
+    width: 100%;
+    font-size: 1rem;
+  }
+}
