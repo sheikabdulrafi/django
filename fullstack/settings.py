@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,10 +29,7 @@ SECRET_KEY = 'django-insecure-_h3(53ddgc-3v6z90)k)u4wb@x!db%-pt0tfk&n4#a_*xy9c2v
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '.vercel.app',
-    'localhost',
-    '127.0.0.1',
-    '.now.sh'
+    '*'
 ]
 
 
@@ -145,3 +143,5 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'sheikabdulraffi@gmail.com'
 EMAIL_HOST_PASSWORD = 'jkhmjawdhaxdxjey'
 
+
+django_heroku.settings(locals())
