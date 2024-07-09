@@ -3,15 +3,11 @@
   "builds": [
     {
       "src": "fullstack/wsgi.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.12" }
+      "use": "@vercel/python"
     },
     {
-      "src": "build_files.sh",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "staticfiles_build"
-      }
+      "src": "static/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -23,6 +19,5 @@
       "src": "/(.*)",
       "dest": "fullstack/wsgi.py"
     }
-  ],
-  "outputDirectory": "staticfiles_build"
+  ]
 }
